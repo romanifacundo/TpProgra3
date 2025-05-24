@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - GameZone</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 GameZone</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Catálogo</a></li>
+        <li><a href="formulario.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario-contacto">
+      <h2>Formulario de contacto</h2>
+      <form>
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="plataforma">Plataforma preferida:</label>
+          <select id="plataforma">
+            <option>PC</option>
+            <option>PlayStation</option>
+            <option>Xbox</option>
+            <option>Nintendo</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label>
+            <input type="checkbox"> Deseo recibir novedades por email
+          </label>
+        </div>
+
+        <div class="campo">
+          <label for="clienteid">ID Cliente:</label>
+          <input type="text" id="clienteid" disabled value="000123">
+        </div>
+
+        <div class="campo">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: contacto@gamezone.com</p>
+    <div class="redes">
+      <span>📘</span> <span>📸</span> <span>🐦</span>
+    </div>
+  </footer>
+</body>
+</html>

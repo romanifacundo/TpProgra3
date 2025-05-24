@@ -14,6 +14,22 @@ body {
   color: var(--color-texto);
 }
 
+.bienvenida {
+  text-align: center;
+}
+
+.imagen-central {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.imagen-central img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 50px;
+}
+
 header, footer {
   background-color: var(--color-primario);
   text-align: center;

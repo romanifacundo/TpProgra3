@@ -1,0 +1,173 @@
+:root {
+  --color-fondo: #121212;
+  --color-primario: #1f1f1f;
+  --color-secundario: #292929;
+  --color-texto: #ffffff;
+  --color-acento: #00ffd9;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header, footer {
+  background-color: var(--color-primario);
+  text-align: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-acento);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/*incluir estilo a los item para resaltar al pasar el puntero del mouse*/
+nav a:hover {
+  background-color: var(--color-acento);
+  color: var(--color-primario); 
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.catalogo {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--color-secundario);
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  width: 250px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.precio {
+  color: var(--color-acento);
+  font-weight: bold;
+}
+
+
+
+.redes {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.redes a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redes a:hover {
+  color: var(--color-acento);
+}
+
+@media (max-width: 600px) {
+  .catalogo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* partes de estilos para formulario */
+.formulario-contacto {
+  max-width: 500px;
+  margin: auto;
+  background-color: var(--color-secundario);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+form .campo {
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form select {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  background-color: var(--color-acento);
+  color: #000;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00e6c1;
+}
+
+
+/* partes de estilos para filtro de busqueda*/
+.busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.busqueda input[type="text"] {
+  padding: 0.5em;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  width: 200px;
+}
+
+.busqueda span {
+  background-color: var(--color-acento);
+  color: #000;
+  padding: 0.5em;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
